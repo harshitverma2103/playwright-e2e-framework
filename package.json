@@ -1,0 +1,17 @@
+{
+  "name": "playwright-e2e-framework",
+  "version": "1.0.0",
+  "description": "End-to-end test automation framework using Playwright and JavaScript, featuring scalable architecture, reusable Page Objects, reporting, and CI/CD integration.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:harshitverma2103/playwright-e2e-framework.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2"
+  }
+}
