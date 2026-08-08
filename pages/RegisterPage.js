@@ -8,7 +8,7 @@ class RegisterPage {
     this.postalCode = page.locator('#postal_code');
     this.houseNumber = page.locator('#house_number');
     this.streetName = page.locator('#street');
-    
+    this.state = page.locator('[data-test="state"]')
     this.city = page.locator('#city');
     this.state = page.getByLabel('State');
     this.phoneNumber = page.locator('#phone');
@@ -23,7 +23,7 @@ class RegisterPage {
     await this.page.getByRole('link', { name: 'Register your account' }).click();
   }
 
-  async fillRegistrationForm(userData) {
+  async registerUser(userData) {
     await this.firstName.fill(userData.firstName);
     await this.lastName.fill(userData.lastName);
     await this.DOB.fill(userData.DOb);
