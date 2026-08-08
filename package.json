@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "End-to-end test automation framework using Playwright and JavaScript, featuring scalable architecture, reusable Page Objects, reporting, and CI/CD integration.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "lint": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git@github-personal:harshitverma2103/playwright-e2e-framework.git"
@@ -11,8 +14,11 @@
   "keywords": [],
   "type": "commonjs",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@faker-js/faker": "^10.5.0",
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.1.2"
+    "@types/node": "^26.1.2",
+    "eslint": "^10.8.1",
+    "globals": "^17.9.0"
   }
 }
