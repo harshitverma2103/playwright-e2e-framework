@@ -20,5 +20,8 @@
     "@types/node": "^26.1.2",
     "eslint": "^10.8.1",
     "globals": "^17.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }

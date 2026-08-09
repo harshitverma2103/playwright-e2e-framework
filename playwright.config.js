@@ -1,8 +1,8 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
 
   fullyParallel: true,
 
@@ -12,20 +12,20 @@ export default defineConfig({
 
   workers: process.env.CI ? 1 : undefined,
 
-  reporter: 'html',
+  reporter: "html",
 
   use: {
-    baseURL: 'https://practicesoftwaretesting.com',
+    baseURL: "https://practicesoftwaretesting.com",
     headless: false,
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
-    trace: 'on-first-retry',
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
+    trace: "on-first-retry",
   },
 
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: "chromium",
+      use: { ...devices["Desktop Chrome"] },
     },
     // {
     //   name: 'firefox',
